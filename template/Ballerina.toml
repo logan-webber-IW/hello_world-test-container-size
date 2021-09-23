@@ -1,0 +1,9 @@
+[package]
+org = "iw"
+name = "template"
+version = "0.1.0"
+# export = ["winery", "winery.model"]
+
+[build-options]
+# cloud = "docker"
+observabilityIncluded = true

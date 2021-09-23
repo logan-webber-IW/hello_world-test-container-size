@@ -1,0 +1,27 @@
+# https://ballerina.io/learn/user-guide/deployment/code-to-cloud/
+
+[container.image]
+name="template"
+tag="latest"
+# repository=""
+# base="ballerina/jre11:v1"
+# cmd="CMD java -Xdiag -cp ‘${APP}:jars/*’ ‘$_init"
+
+
+# This configuration copys your config file into the docker image - there are other ways of doing this...
+[[container.copy.files]]
+sourceFile="./Config.toml"
+target="/home/ballerina/Config.toml"
+
+# This is the alternative/primary way of bringing in your configurables
+# [[cloud.config.envs]]
+# key_ref="name"
+# config_name="name"
+
+# [cloud.deployment.probes.liveness]
+# port = 9090
+# path = "//getResource"
+
+# [cloud.deployment.probes.readiness]
+# port = 9090
+# path = "//getResource"

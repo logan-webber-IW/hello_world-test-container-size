@@ -1,0 +1,8 @@
+# https://ballerina.io/learn/user-guide/configurability/defining-configurable-variables/
+
+# Root configuration
+message = "This is a message to"
+
+# Module configuration - (ballerina.toml - project name).(module name) 
+[template.exampleModule]
+name = "Gabbeth"

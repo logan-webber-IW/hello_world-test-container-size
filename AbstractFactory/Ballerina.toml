@@ -1,0 +1,8 @@
+[package]
+org = "iw"
+name = "abstractFactory"
+version = "0.1.0"
+# export = ["winery", "winery.model"]
+
+[build-options]
+observabilityIncluded = true
